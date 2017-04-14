@@ -4,6 +4,7 @@ var app = express();
 
 app.use('/static', express.static('public'));
 
+app.set('views', './src/views');
 app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
